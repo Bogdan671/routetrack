@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+ 
+  <div class="wrapper">
+    
+    <main class="main">
+      <div class="container">
+
+        
+        
+
+        <form action="" class="main-form">
+
+
+          <div class="aside-block">
+            Для расчета стоимости необходимо ввести параметры груза, пункты отправки и прибытия.
+          </div>
+
+          <h1 class="main-title">
+          FTL: Прямая машина
+          </h1>
+
+          <section class="route">
+          <h2 class="route__title section-title">
+            Маршрут
+          </h2>
+
+          <label for="from"> Откуда </label>
+          <input type="text" name="from" class="route__input">
+
+          <label for="to"> Куда </label>
+          <input type="text" name="to" class="route__input">
+
+          </section>
+
+          <section class="transport">
+            <h2 class="transport__title section-title">
+             Транспорт
+            </h2>
+            
+            <div class="transport__container">
+              <div class="transport__under-container">
+               <label for="lifting" class="transport__label"> Грузоподъёмность </label>
+                <div class="selected">
+                    <div class="selected__header transport__select">
+                      <span class="selected__current">
+                        Не выбрана
+                      </span>
+                      <div class="selected__icon">
+                        <img src="images/icon.png" alt="icon" class="selected__icon-img">
+                      </div>
+                    </div>
+                    <div class="selected__body">
+                      <div class="selected__item">
+                        Вариант 1
+                      </div>
+                       <div class="selected__item">
+                        Вариант 2
+                      </div>
+                       <div class="selected__item">
+                        Вариант 3
+                      </div>
+                       <div class="selected__item">
+                        Вариант 4
+                      </div>
+                       <div class="selected__item">
+                        Вариант 5
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transport__under-container">
+               <label for="method" class="transport__label"> Способ погрузки </label>
+               <div class="selected">
+                    <div class="selected__header transport__select">
+                      <span class="selected__current transport__method">
+                        Задняя
+                      </span>
+                      <div class="selected__icon">
+                        <img src="images/icon.png" alt="icon" class="selected__icon-img">
+                      </div>
+                    </div>
+                    <div class="selected__body">
+                      <div class="selected__item">
+                        Вариант 1
+                      </div>
+                       <div class="selected__item">
+                        Вариант 2
+                      </div>
+                       <div class="selected__item">
+                        Вариант 3
+                      </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+           
+          </section>
+
+          <section class="cargo">
+            <h2 class="cargo__title section-title">
+                Груз
+            </h2>
+
+            <div class="cargo__mix-container">
+              <div class="cargo__container">
+              <div class="input-container">
+                <label for="cargo-type"> Тип груза</label>
+                 <div class="selected">
+                      <div class="selected__header cargo__select">
+                        <span class="selected__current">
+                          Не выбран
+                        </span>
+                        <div class="selected__icon">
+                          <img src="images/icon.png" alt="icon" class="selected__icon-img">
+                        </div>
+                      </div>
+                      <div class="selected__body">
+                        <div class="selected__item">
+                          Вариант 1
+                        </div>
+                         <div class="selected__item">
+                          Вариант 2
+                        </div>
+                         <div class="selected__item">
+                          Вариант 3
+                        </div>
+                         <div class="selected__item">
+                          Вариант 4
+                        </div>
+                         <div class="selected__item">
+                          Вариант 5
+                        </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="cargo__second-container">
+               <div class="input-container cargo__third">
+                <label for="danger-type"> Класс опасности </label>
+                <div class="selected">
+                    <div class="selected__header cargo__select">
+                      <span class="selected__current cargo__current">
+                        Класс 1
+                      </span>
+                      <div class="selected__icon">
+                        <img src="images/icon.png" alt="icon" class="selected__icon-img">
+                      </div>
+                    </div>
+                    <div class="selected__body">
+                      <div class="selected__item">
+                        Класс 1
+                      </div>
+                       <div class="selected__item">
+                        Класс 2
+                      </div>
+                       <div class="selected__item">
+                        Класс 3
+                      </div>
+                       <div class="selected__item">
+                        Класс 4
+                      </div>
+                       <div class="selected__item">
+                        Класс 5
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="input-container cargo__types">
+                <label for="cost" class="little"> Объявленная ценность, ₽ </label>
+                <input name="cost" type="number" class="cargo__select cargo__number"></input>
+              </div>
+            </div>
+            </div>
+            
+
+            <div class="cargo__container cargo__checkbox-container"> 
+              <label for="temperature" class="checkbox-label">
+                <input type="checkbox" id="temperature" name="temperature" class="cargo__checkbox">
+                <span class="cargo__fake"></span>
+                Требуется температурный режим
+              </label>
+            </div>
+
+            <div class="cargo__second-container mobile-container">
+              <div class="input-container">
+                <label for="tempfrom"> От, °C </label>
+                <input type="number" id="tempfrom" name="tempfrom" class="cargo__select cargo__number cargo__temp">
+              </div>
+             <div class="input-container cargo__types cargo__types-2">
+                <label for="tempto"> До, °C </label>
+                <input type="number" id="tempto" name="tempto"  class="cargo__select cargo__number cargo__temp">
+             </div>
+            </div>
+            
+
+          </section>
+
+          <section class="time">
+            <h2 class="time__title section-title">
+                Время
+            </h2>
+
+            
+             <p class="time__inform">
+                <span class="time__question">
+                  Когда прибыть на точку
+                </span>
+                <span class="time__distance">
+                  700 км в день
+                </span>
+             </p>
+                
+             <div class="time__block">
+               <input type="text" class="time__input" placeholder="Адрес не указан">
+               <span class="time__choose">
+                 не выбрано
+               </span>
+             </div>   
+
+             <div class="time__block">
+               <input type="text" class="time__input" placeholder="Адрес не указан">
+               <span class="time__choose">
+                 не выбрано
+               </span>
+             </div>   
+              
+            
+            <label for="textfield" class="time__label"> Комментарий к заказу</label>
+            <textarea name="textfield" id="textfield" class="time__textfield" placeholder="Укажите особенности въезда на территорию склада или подъезда к адресу"></textarea>
+          </section>
+
+        </form>
+
+        
+
+      </div>
+    </main>
+    
+  </div>
+
+
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
